@@ -1,0 +1,12 @@
+.carte-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon--shifumi {
+    border-radius: 360px;
+}
+
+.card-text {
+    font-weight: bold;
+}

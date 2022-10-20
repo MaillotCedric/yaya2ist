@@ -1,0 +1,21 @@
+body {
+    background-color: #262161 !important;
+}
+
+#icone-shifumi {
+    height: 130px;
+    border-radius: 360px;
+}
+
+.output_canvas
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#container-divers {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

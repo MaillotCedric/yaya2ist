@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+        <!-- Bootstrap -- icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- Bootstrap 5.2.2 -- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- Template -- CSS -->
+        <link rel="stylesheet" href="./styles/template.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>YAYA2IST</title>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-robot"></i>
+                    YAYA2IST
+                </a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./pages/shifumi/shifumi.html">Shifumi 2.0</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./pages/pokedex/pokedex.html">Pokédex</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">N0N0</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="bi bi-robot"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Proof Of Concept de détection et de reconnaissance d’objets</p>
+            </div>
+        </header>
+        <!-- Contenu principal -->
+        <div id="contenu" class="p-4">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Carte -- Shifumi -->
+                    <div class="carte-container col-md-6 colm-sm-12 mb-4">
+                        <div class="card overflow-hidden border border-2 border-secondary" style="width: 18rem;">
+                            <div class="card-head p-3">
+                                <img id="icon--shifumi" src="./assets/images/icon_shifumi.jpg" class="card-img-top" alt="icône shifumi">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Pierre Feuille Ciseaux Lézard Spock</p>
+                                <a href="./pages/shifumi/shifumi.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carte -- Pokédex -->
+                    <div class="carte-container col-md-6 colm-sm-12 mb-4">
+                        <div class="card overflow-hidden border border-2 border-secondary" style="width: 18rem;">
+                            <div class="card-head p-2">
+                                <img src="./assets/images/icon_pokedex.png" class="card-img-top" alt="icône pokédex">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Pokédex</p>
+                                <a href="./pages/pokedex/pokedex.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap 5.2.2 -- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
