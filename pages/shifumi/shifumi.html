@@ -54,15 +54,20 @@
         </header>
         <div class="container text-center text-white m-3 p-0">
             <div class="row">
+                <!-- Webcam -->
                 <div class="col">
                     <video hidden class="input_video"></video>
                     <canvas class="output_canvas" width="800px" height="500px"></canvas>
                 </div>
+                <!-- Divers -->
                 <div id="container-divers" class="col">
                     <div id="compteur" class="h2 text-warning"></div>
-                    <div id="image-divers"></div>
+                    <div id="image-divers">
+                        <img src="./assets/images/welcome-robot.png" alt="welcome robot">
+                    </div>
                 </div>
             </div>
+            <!-- Choix -->
             <div class="row">
                 <div class="col h5">
                     Mon choix
@@ -79,11 +84,13 @@
                     o
                 </div>
             </div>
+            <!-- Message -->
             <div class="row">
                 <div id="message" class="col h5">
                     .....
                 </div>
             </div>
+            <!-- Score -->
             <div class="row">
                 <div class="col h5">
                     Score
@@ -102,7 +109,11 @@
         <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+        <!-- outils divers -->
+        <script src="./scripts/outils.js"></script>
         <!-- shifumi.js -->
         <script src="./scripts/shifumi.js"></script>
+        <!-- hand tracking -->
+        <script src="./scripts/hand_tracking.js"></script>
     </body>
 </html>

@@ -19,3 +19,7 @@ body {
     justify-content: center !important;
     align-items: center !important;
 }
+
+#image-divers > img {
+    width: 200px;
+}
