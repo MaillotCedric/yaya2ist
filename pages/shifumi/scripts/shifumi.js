@@ -121,13 +121,20 @@ function partie_terminator(jeu) {
     let container_mon_score = document.getElementById("mon-score");
     let container_score_robot = document.getElementById("score-robot");
 
-    jeu.mon_choix = figure_aleatoire();
+    // jeu.mon_choix = figure_aleatoire();
     jeu.choix_robot = figure_bat(jeu.mon_choix);
 
     jeu.figure_gagnante = jeu.choix_robot;
     jeu.figure_perdante = jeu.mon_choix;
     jeu.score_robot++;
     jeu.message = nouveau_message(jeu);
+
+    container_image.innerHTML = `<img src="./assets/images/terminator.png" alt="terminator">`;
+    container_mon_choix.innerHTML = `<img src="./assets/images/`+ jeu.mon_choix +`.jpg" alt="`+ jeu.mon_choix +`">`;
+    container_choix_robot.innerHTML = `<img src="./assets/images/`+ jeu.choix_robot +`.jpg" alt="`+ jeu.choix_robot +`">`;
+    container_message.innerHTML = jeu.message;
+    container_mon_score.innerHTML = jeu.mon_score;
+    container_score_robot.innerHTML = jeu.score_robot;
 };
 
 function nouvelle_partie(jeu) {

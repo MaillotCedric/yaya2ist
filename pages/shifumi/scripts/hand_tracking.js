@@ -88,12 +88,14 @@ function prendre_snap() {
         if (jeu.mon_choix !== "") {
             nouvelle_partie(jeu);
         } else {
+            let container_image = document.getElementById("image-divers");
             let container_mon_choix = document.getElementById("mon-choix");
             let container_choix_robot = document.getElementById("choix-robot");
             let container_message = document.getElementById("message");
             let container_mon_score = document.getElementById("mon-score");
             let container_score_robot = document.getElementById("score-robot");
 
+            container_image.innerHTML = `<img src="./assets/images/thinking-robot.png" alt="thinking robot">`;
             container_mon_choix.innerHTML = "x";
             container_choix_robot.innerHTML = "o";
             container_message.innerHTML = "Rien n'a été joué || La figure choisie est inconnue";
@@ -115,7 +117,7 @@ function lancer_decompte() {
         if (x < 0) {
             clearInterval(interval);
             compteur.innerHTML = "";
-            container_image.innerHTML = `<img src="./assets/images/thinking-robot.png" alt="thinking robot">`;
+            // container_image.innerHTML = `<img src="./assets/images/thinking-robot.png" alt="thinking robot">`;
             x = 3;
             prendre_snap();
             
@@ -152,6 +154,9 @@ function onResults(results) {
                 lancer_partie();
             } else if (mode_terminator(results)) {
                 afficher("mode terminator");
+                jeu.mon_choix = "";
+                jeu.mode_jeu = "terminator";
+                lancer_partie();
             } else if (pierre(results)) {
                 afficher("pierre");
                 jeu.mon_choix = "pierre";
