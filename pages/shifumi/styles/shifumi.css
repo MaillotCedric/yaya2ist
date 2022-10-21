@@ -23,3 +23,7 @@ body {
 #image-divers > img {
     width: 200px;
 }
+
+#contenu-shifumi {
+    max-width: inherit;
+}
